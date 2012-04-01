@@ -976,7 +976,7 @@ function parseOptions(str, map) {
     error('parseOptions() internal error: no map given');
 
   // All options are false by default
-  var options = {};
+  var options = {}, letter;
   for (letter in map)
     options[map[letter]] = false;
 
